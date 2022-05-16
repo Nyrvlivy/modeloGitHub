@@ -11,23 +11,23 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-logo" src="img/Logo.svg" alt="logo GitHub"> <!--logo-->
-        <nav class="cabecalho-menu">                        
-            <select class="cabecalho-menu-item" name="Product" id="Product">
-                <option value="Product" selected>Product</option>
-                <option value="api01">API</option>
-                <option value="Sites">Sites</option>
-            </select>
-            <a class="cabecalho-menu-item" href="#">Team</a>
-            <a class="cabecalho-menu-item" href="#">Enterprise</a>
-            <a class="cabecalho-menu-item" href="#">Explore</a>
-            <a class="cabecalho-menu-item" href="#">Marketplace</a>
-            <a class="cabecalho-menu-item" href="#">Pricing</a>          
+        <div class="cabecalho-menu">      
+            <div class="cabecalho-menu-esquerda">              
+                <img class="cabecalho-logo" src="img/Logo.svg" alt="logo GitHub"> <!--logo-->
+                <a class="cabecalho-menu-item" href="#">Product</a>
+                <a class="cabecalho-menu-item" href="#">Team</a>
+                <a class="cabecalho-menu-item" href="#">Enterprise</a>
+                <a class="cabecalho-menu-item" href="#">Explore</a>
+                <a class="cabecalho-menu-item" href="#">Marketplace</a>
+                <a class="cabecalho-menu-item" href="#">Pricing</a>         
+            </div>    
             <!--campo de busca, por hr como texto-->
-            <input class="cabecalho-busca" type="search" name="search-github" id="search-github" placeholder="Search GitHub" value="">
-            <button class="cabecalho-logar">Sign in</button>
-            <button class="cabecalho-inscrever">Sign up</button>
-        </nav>        
+            <div class="cabecalho-menu-direita">
+                <input class="cabecalho-buscar" type="text" name="search-github" id="search-github" placeholder="Search GitHub" value="">
+                <button class="cabecalho-logar">Sign in</button>
+                <button class="cabecalho-inscrever">Sign up</button>
+            </div>
+        </div>        
     </header>
     <main class="conteudo">
         <section class="conteudo-principal">
@@ -35,7 +35,7 @@
                 <h1 class="conteudo-principal-escrito-titulo">Where the world builds software</h1>
                 <p class="conteudo-principal-escrito-subtitulo">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
                 <div class="conteudo-principal-email">
-                    <input class="conteudo-principal-email-caixa"type="text" name="email-address" id="email-address" placeholder="Emais address">
+                    <input class="conteudo-principal-email-caixa"type="text" name="email-address" id="email-address" placeholder="Email address">
                     <button class="conteudo-principal-inscrever">Sign up for GitHub</button>
                 </div>
             </div>
