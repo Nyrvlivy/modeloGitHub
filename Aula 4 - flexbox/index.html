@@ -10,63 +10,61 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="img/Logo.svg" alt="logo GitHub"> <!--logo-->
-            <!--comando abaixo: a*6-->            
-            <select name="Product" id="Product">
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="img/Logo.svg" alt="logo GitHub"> <!--logo-->
+        <nav class="cabecalho-menu">                        
+            <select class="cabecalho-menu-item" name="Product" id="Product">
                 <option value="Product" selected>Product</option>
                 <option value="api01">API</option>
                 <option value="Sites">Sites</option>
             </select>
-            <a href="#">Team</a>
-            <a href="#">Enterprise</a>
-            <select name="Explore" id="Explore">
-                <option value="Explore" selected>Explore</option>
-            </select>            
-            <a href="#">Marketplace</a>
-            <select name="Pricing" id="Pricing">
-                <option value="Princing" selected>Princing</option>
-                <option value="#">Rent Space</option>
-            </select>
-        </nav>
-        <div>
+            <a class="cabecalho-menu-item" href="#">Team</a>
+            <a class="cabecalho-menu-item" href="#">Enterprise</a>
+            <a class="cabecalho-menu-item" href="#">Explore</a>
+            <a class="cabecalho-menu-item" href="#">Marketplace</a>
+            <a class="cabecalho-menu-item" href="#">Pricing</a>          
             <!--campo de busca, por hr como texto-->
-            <input type="search" name="search-github" id="search-github" placeholder="Search GitHub" value="">
-            <button>Sign in</button>
-            <button>Sign up</button>
-        </div>
+            <input class="cabecalho-busca" type="search" name="search-github" id="search-github" placeholder="Search GitHub" value="">
+            <button class="cabecalho-logar">Sign in</button>
+            <button class="cabecalho-inscrever">Sign up</button>
+        </nav>        
     </header>
-    <main>
-        <section>
-            <div>
-                <h1>Where the world builds software</h1>
-                <p>Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
-                <div>
-                    <input type="text" name="email-address" id="email-address" placeholder="Emais address">
-                    <button>Sign up for GitHub</button>
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Where the world builds software</h1>
+                <p class="conteudo-principal-escrito-subtitulo">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
+                <div class="conteudo-principal-email">
+                    <input class="conteudo-principal-email-caixa"type="text" name="email-address" id="email-address" placeholder="Emais address">
+                    <button class="conteudo-principal-inscrever">Sign up for GitHub</button>
                 </div>
-                <img src="img/image 3.svg" alt="globo">
             </div>
+            <img class="conteudo-principal-imagem" src="img/image 3.svg" alt="globo">
         </section>   
-        <section>
-            <div>
-                <div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+        <section  class="conteudo-secundario">
+            <div class="conteudo-secundario-dados">
+                <div class="card">
+                   <h2 class="conteudo-secundario-dados-item">83+ million</h2>
+                    <p class="conteudo-secundario-dados-item-cat">Developers</p>
                 </div>
-                <img src="img/mlkinho.svg" alt="mlkinho">
-            </div>
+                <div class="card">
+                    <h2 class="conteudo-secundario-dados-item">4+ million</h2>
+                     <p class="conteudo-secundario-dados-item-cat">Organization</p>
+                 </div>
+                 <div class="card">
+                    <h2 class="conteudo-secundario-dados-item">200+ million</h2>
+                     <p class="conteudo-secundario-dados-item-cat">Repositories</p>
+                 </div>
+                 <div class="card">
+                    <h2 class="conteudo-secundario-dados-item">90%</h2>
+                     <p class="conteudo-secundario-dados-item-cat">Fortune 100</p>
+                 </div>
+                </div>
+                <img class="conteudo-secundario-imagem" src="img/mlkinho.svg" alt="mlkinho">
         </section> 
     </main>
-    <footer>
-        <img src="img/git_logo_nome.png" alt="logo_github_name">
+    <footer class="rodape">
+        <img class="rodape-imagem" src="img/git_logo_nome.png" alt="logo_github_name">
     </footer>
 </body>
 </html>
